@@ -1,0 +1,63 @@
+.hero {
+    background-color: $color__dark__green;
+    padding: 80px 0 60px;
+    overflow: hidden;
+    background-image: url(../images/shape1.png);
+    
+    @include sm-devices {
+        padding: 130px 0 100px;
+    }
+    .container {
+        position: relative;
+    }
+
+    .hero-img {
+        padding: 0 15px;
+    }
+    .line {
+        width: 185px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: $color__white;
+        margin: 0 0 20px;
+        opacity: 0.5;
+    }
+    .sub-title {
+        font-size: 1.25rem;
+    }
+    .events-table {
+        margin-top: 2rem;
+
+        table {
+            max-width: 450px;
+            margin: 0 auto;
+            td {
+                font-weight: 500;
+                color: $color__white;
+                font-size: 1.25rem;
+                padding: 0.8rem;
+                border-width: 2px;
+
+                @include mobile {
+                    font-size: .9rem;
+                    padding: 0.5rem 0.4rem;
+                }
+            }
+        }
+    }
+    .cornar-logo {    
+        padding: 30px 30px 0;    
+        text-align: center;
+        margin: 0 auto;
+        @include lg-devices {
+            padding: 0;
+            position: absolute;
+            right: 0;
+            bottom: -50px;   
+            width: 220px;         
+        }
+        @include xl-devices {
+            width: auto;
+        }
+    }
+}

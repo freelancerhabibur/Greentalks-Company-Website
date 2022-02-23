@@ -1,0 +1,55 @@
+.header {
+    padding: 1rem 0;
+    .navbar {
+        padding: 0;
+
+        @media (min-width: 375px) {
+            padding: 0 10px;
+        }
+
+        .navbar-brand {
+            position: relative;
+            bottom: -6px;
+
+            img {
+                width: 180px;
+
+                @include sm-devices {
+                    width: 230px;
+                }
+            }
+        }
+    }
+    .language-select {
+        li {
+            position: relative;
+            display: inline-block;
+            padding-left: 1rem;
+            & + li {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 4px;
+                    width: 3px;
+                    height: 55%;
+                    transform: translateY(-50%);
+                    background-color: $color__dark__green;
+                }
+            }
+            a {
+                color: $color__green;
+                font-size: 1rem;
+                font-family: $font_gotham;
+
+                @include sm-devices {
+                    font-size: 1.25rem;
+                }
+
+                &.active {
+                    font-family: $font_gotham-medium;
+                }
+            }
+        }
+    }
+} 
