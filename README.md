@@ -2,4 +2,4 @@
 
 https://freelancerhabibur.github.io/Greentalks-Company-Website/
 
-https://freelancerhabibur.github.io/Greentalks-Company-Website/index2.html
+https://freelancerhabibur.github.io/Greentalks-Company-Website/index-2.html
