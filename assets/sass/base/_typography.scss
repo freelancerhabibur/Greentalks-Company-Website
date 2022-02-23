@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font_gotham;
+
+	html[dir='rtl'] & {
+		font-family: $font_dinar-light;
+	}
+}
+p {
+    margin: 0;
+    padding: 0;    
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+::selection {
+	background-color: $color__olive;
+}
